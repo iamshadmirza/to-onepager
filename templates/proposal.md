@@ -47,13 +47,15 @@ Problem / What / Why / How live on this page type only.
 
 ## Recommendation
 
+None — **or**, only if the transcript discussed follow-ups:
+
 * Decision / owner
-* Near-term next steps (about one week): …
+* Near-term next steps (from the session only): …
 
 ## Review
 
-* [ ] Ground checklist in SKILL.md passed
-* [ ] Owner and Reviewer named (or TBD)
+* [ ] Owner and Reviewer named
+* [ ] Ready for human review
 ```
 
 ## Fill notes
@@ -62,5 +64,5 @@ Problem / What / Why / How live on this page type only.
 * **What:** scope in/out and success signal only.
 * **Why:** why now and cost of inaction only; link evidence rather than re-litigating full research.
 * **How:** chosen path first, then compared options with sources if any (not a local script runbook).
-* **Recommendation:** owners and near-term next steps; do not restate Finding.
+* **Recommendation:** do not invent next steps. If the session named owners and follow-ups, list those; otherwise None.
 * One job per section. Body budget about 600 words; cut ideas before shrinking layout.

@@ -2,6 +2,8 @@
 
 A Cursor skill that turns a research or decision conversation into a one-pager that is easy to read and follow, then publishes it where you choose: **local Markdown**, **Google Docs**, or **Confluence**.
 
+**Author:** [Mohammad Shad Mirza](https://github.com/iamshadmirza) (`iamshadmirza`)
+
 Use the page as a **meeting pre-read**: share ahead or read in silence at the start, then discuss. The page carries the context so the meeting does not.
 
 ## What it does
@@ -13,7 +15,7 @@ Use the page as a **meeting pre-read**: share ahead or read in silence at the st
 | `research-finding` | Empirical question: what is true? |
 | `proposal` | Decision bet: Problem / What / Why / How |
 
-Shared on every page: Status, Owner, Reviewer, Page type, cold-reader Answer (Finding = TLDR), Review, near-term next steps.
+Shared on every page: Status, Owner, Reviewer, Page type, cold-reader Answer (Finding = TLDR), Review. Recommendation lists follow-ups only when the session discussed them; closed research may say None.
 
 ## When to use it
 

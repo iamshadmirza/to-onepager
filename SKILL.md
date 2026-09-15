@@ -77,7 +77,7 @@ Fill that spine for **easy reading**: a cold reader should get the claim in seco
 * **One job per section:** each heading does one job. If a section argues two things, split or cut.
 * **Answer** a cold reader can use without caring about page type: Finding (TLDR) / Confidence / So what
 * Title is the **claim** (include a measured number when the transcript has one)
-* Recommendation names owners, the decision, and **near-term next steps** (what happens in about a week). It must add actions, not restate Finding.
+* Recommendation: only actions discussed in the session. If the session only answered a question (closed research, no product bet), write **None** (or "research complete; no follow-up") — do **not** invent next steps, doc TODOs, reviewer homework, or a "~1 week" plan.
 * Header: Status, Owner, Reviewer, Updated, Page type, Go deeper
 * Review section present; Status stays short of Reviewed until a named Reviewer exists
 
@@ -103,7 +103,8 @@ Fail and edit until every check passes. This step is the single source of truth 
 * **One-page budget:** about 600 words; if over, cut the least important ideas (do not shrink type or stuff an appendix)
 * **Plain pass** on Answer + Recommendation: active voice, short words, cut needless words and jargon
 * **No templated bridges:** cut phrases like "in today's landscape," "game-changer," "here's why this matters," or a closing question added only for engagement
-* **No soft recap:** Recommendation adds owners and next steps; it does not rephrase Finding
+* **No soft recap:** Recommendation does not rephrase Finding
+* **No invented follow-ups:** next steps only if the transcript discussed them; otherwise Recommendation is None / research complete
 * Every section adds something new; delete filler that only restates an earlier section
 
 **research-finding**
@@ -112,6 +113,7 @@ Fail and edit until every check passes. This step is the single source of truth 
 * Results and Key findings lead with the measured outcome, then brief context
 * Mechanisms with counts and user elevations appear in Key findings
 * Assumptions have verdicts when prior beliefs existed
+* Closed understanding sessions often have Recommendation: None
 
 **proposal**
 
@@ -120,6 +122,7 @@ Fail and edit until every check passes. This step is the single source of truth 
 * How leads with the chosen path, then options
 * Alternatives table present (at least "do nothing"); each option has a why-not and a source or link when the transcript had one
 * How names the chosen path; if the session compared options, list them under How or Alternatives with sources
+* Near-term next steps only when the session named them; otherwise say none rather than inventing a week plan
 
 **Completion:** all applicable checks pass.
 
