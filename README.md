@@ -4,8 +4,6 @@ A Cursor skill that turns a research or decision conversation into a one-pager t
 
 **Author:** [Mohammad Shad Mirza](https://github.com/iamshadmirza) (`iamshadmirza`)
 
-[![skills.sh](https://skills.sh/b/iamshadmirza/to-onepager)](https://skills.sh/iamshadmirza/to-onepager)
-
 ```bash
 npx skills add iamshadmirza/to-onepager -g -a cursor
 ```
