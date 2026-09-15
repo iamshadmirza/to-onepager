@@ -4,6 +4,12 @@ A Cursor skill that turns a research or decision conversation into a one-pager t
 
 **Author:** [Mohammad Shad Mirza](https://github.com/iamshadmirza) (`iamshadmirza`)
 
+[![skills.sh](https://skills.sh/b/iamshadmirza/to-onepager)](https://skills.sh/iamshadmirza/to-onepager)
+
+```bash
+npx skills add iamshadmirza/to-onepager -g -a cursor
+```
+
 Use the page as a **meeting pre-read**: share ahead or read in silence at the start, then discuss. The page carries the context so the meeting does not.
 
 ## What it does
@@ -24,27 +30,40 @@ Shared on every page: Status, Owner, Reviewer, Page type, cold-reader Answer (Fi
 * `/to-onepager setup` to set or change publish destination
 * Before a decision meeting, when a short written pre-read beats slides
 
-## Install (Cursor)
+## Install
 
-Install the **whole folder** (not only `SKILL.md`):
+Uses the open [skills](https://github.com/vercel-labs/skills) CLI (same as most skills on [skills.sh](https://skills.sh)).
 
-### Option 1: Ask Cursor
-
-> Install https://github.com/iamshadmirza/to-onepager into `~/.cursor/skills/to-onepager/` (all files, including `templates/` and `publish.md`).
-
-### Option 2: Clone
+### Cursor (recommended)
 
 ```bash
-git clone https://github.com/iamshadmirza/to-onepager.git ~/.cursor/skills/to-onepager
+npx skills add iamshadmirza/to-onepager -g -a cursor
 ```
 
-### Option 3: Project skill
+List without installing:
 
-Copy the repo into `.cursor/skills/to-onepager/` in your project. Keep `config.md` out of git.
+```bash
+npx skills add iamshadmirza/to-onepager --list
+```
+
+The CLI installs the whole skill folder (`SKILL.md`, `templates/`, `publish.md`, …). Global Cursor installs typically land under `~/.agents/skills/to-onepager` (canonical copy, registered for Cursor). Reload Cursor / skills if `/to-onepager` does not appear yet.
+
+### Other agents
+
+```bash
+npx skills add iamshadmirza/to-onepager -g -a claude-code
+# or omit -a and pick agents interactively
+```
+
+### Alternatives
+
+* Ask Cursor: install `https://github.com/iamshadmirza/to-onepager` as a skill (whole folder).
+* Clone: `git clone https://github.com/iamshadmirza/to-onepager.git ~/.cursor/skills/to-onepager`
+* Project skill: copy into `.cursor/skills/to-onepager/` or `.agents/skills/to-onepager/`. Keep `config.md` out of git.
 
 ## First-run setup
 
-On first use (or `setup`), the skill asks for destination and paths, then writes `config.md` beside `SKILL.md`. That file is local to your install.
+On first use (or `setup`), the skill asks for destination and paths, then writes `config.md` beside `SKILL.md` in the install directory. That file is local to your install.
 
 See [config.example.md](./config.example.md).
 
