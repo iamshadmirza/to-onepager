@@ -1,6 +1,6 @@
 # to-onepager
 
-A Cursor skill that turns a research or decision conversation into a one-pager and publishes it where you choose: **local Markdown**, **Google Docs**, or **Confluence**.
+A Cursor skill that turns a research or decision conversation into a one-pager that is easy to read and follow, then publishes it where you choose: **local Markdown**, **Google Docs**, or **Confluence**.
 
 Use the page as a **meeting pre-read**: share ahead or read in silence at the start, then discuss. The page carries the context so the meeting does not.
 

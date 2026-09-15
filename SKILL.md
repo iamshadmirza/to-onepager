@@ -5,7 +5,7 @@ argument-hint: "Transcript path or paste (optional). Otherwise use the current c
 disable-model-invocation: true
 ---
 
-Turn a conversation into a one-pager: one **claim**, grounded evidence, configured publish destination.
+Turn a conversation into a one-pager: one **claim**, grounded evidence, easy to read and follow, configured publish destination.
 
 **Input:** transcript path/paste if given; else current conversation. `setup` / `reconfigure` → run Setup even when `config.md` exists.
 
@@ -68,17 +68,22 @@ Load the template for the routed type (context pointer — read only that file):
 * `research-finding` → [templates/research-finding.md](templates/research-finding.md)
 * `proposal` → [templates/proposal.md](templates/proposal.md)
 
-Fill that spine. Every page uses the same **chrome**:
+Fill that spine for **easy reading**: a cold reader should get the claim in seconds and follow one thread per section.
 
-* Header: Status, Owner, Reviewer, Updated, Page type, Go deeper
-* **Answer** a **cold reader** can use without caring about page type: Finding (TLDR) / Confidence / So what
+**Readability (every page)**
+
+* **Lead with the concrete thing:** title and Finding open with the number, verdict, or bet. Context follows; it does not open the page.
+* **Explain after the example:** in Results, Key findings, and How, state the measured outcome or chosen path first, then one short line of context if needed.
+* **One job per section:** each heading does one job. If a section argues two things, split or cut.
+* **Answer** a cold reader can use without caring about page type: Finding (TLDR) / Confidence / So what
 * Title is the **claim** (include a measured number when the transcript has one)
-* Recommendation names owners, the decision, and **near-term next steps** (what happens in about a week)
+* Recommendation names owners, the decision, and **near-term next steps** (what happens in about a week). It must add actions, not restate Finding.
+* Header: Status, Owner, Reviewer, Updated, Page type, Go deeper
 * Review section present; Status stays short of Reviewed until a named Reviewer exists
 
 Owner / Reviewer: resolve real people. For Confluence destinations use Atlassian mentions when publishing ([publish.md](publish.md)). Otherwise display names. Ask if unknown; `TBD` only if deferred.
 
-**Completion:** routed spine filled; chrome complete; Owner/Reviewer resolved or explicit `TBD`.
+**Completion:** routed spine filled; chrome complete; Owner/Reviewer resolved or explicit `TBD`; title and Finding lead with the concrete claim.
 
 ### 4. Ground
 
@@ -88,24 +93,31 @@ Fail and edit until every check passes. This step is the single source of truth 
 
 * Every factual cell/bullet traces to the transcript
 * No unmeasured magnitudes
-* Cold-reader Answer works without reading page type; Finding is the TLDR
+* Cold-reader Answer works without reading page type; Finding is the TLDR and leads with the concrete claim
+* Title leads with the claim (not a topic or soft header)
 * Body matches the routed page type (no hybrid spine)
+* One job per section; no section that both explains and recommends
 * Chrome complete; Reviewed requires a named Reviewer
 * Go deeper / recommendations stay free of local runbook clutter
 * Confidence matches evidence; title matches measured numbers when present
 * **One-page budget:** about 600 words; if over, cut the least important ideas (do not shrink type or stuff an appendix)
 * **Plain pass** on Answer + Recommendation: active voice, short words, cut needless words and jargon
+* **No templated bridges:** cut phrases like "in today's landscape," "game-changer," "here's why this matters," or a closing question added only for engagement
+* **No soft recap:** Recommendation adds owners and next steps; it does not rephrase Finding
+* Every section adds something new; delete filler that only restates an earlier section
 
 **research-finding**
 
 * Findings hold facts only (interpretation stays in Answer)
+* Results and Key findings lead with the measured outcome, then brief context
 * Mechanisms with counts and user elevations appear in Key findings
 * Assumptions have verdicts when prior beliefs existed
 
 **proposal**
 
 * Problem, What, Why, How present and non-empty
-* Finding states the recommended bet
+* Finding states the recommended bet up front
+* How leads with the chosen path, then options
 * Alternatives table present (at least "do nothing"); each option has a why-not and a source or link when the transcript had one
 * How names the chosen path; if the session compared options, list them under How or Alternatives with sources
 

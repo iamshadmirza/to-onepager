@@ -58,8 +58,9 @@ Problem / What / Why / How live on this page type only.
 
 ## Fill notes
 
-* **What:** scope in/out and success signal.
-* **Why:** why now, cost of inaction; link evidence rather than re-litigating full research.
-* **How:** chosen approach and constraints. When the session weighed options, keep short overviews + sources here or in Alternatives (not a local script runbook).
-* **Recommendation:** actionable next steps the team can finish soon, not a vague roadmap.
-* Body budget about 600 words; cut ideas before shrinking layout.
+* Lead with the concrete bet in the title and Finding; Problem states who hurts, not a soft intro.
+* **What:** scope in/out and success signal only.
+* **Why:** why now and cost of inaction only; link evidence rather than re-litigating full research.
+* **How:** chosen path first, then compared options with sources if any (not a local script runbook).
+* **Recommendation:** owners and near-term next steps; do not restate Finding.
+* One job per section. Body budget about 600 words; cut ideas before shrinking layout.
