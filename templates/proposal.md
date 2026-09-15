@@ -1,0 +1,65 @@
+# proposal template
+
+Copy this spine. Fill every required section. Quality rules live in SKILL.md **Ground** — do not weaken them here.
+
+Problem / What / Why / How live on this page type only.
+
+```markdown
+# [Claim: the bet, with a stake when known]
+
+| | |
+| --- | --- |
+| **Status** | Draft / In review / Reviewed / Accepted / Superseded |
+| **Owner** | [name or mention] |
+| **Reviewer** | [name or mention] (required before Reviewed) |
+| **Updated** | YYYY-MM-DD |
+| **Page type** | proposal |
+| **Go deeper** | RFC, ticket, prior one-pager, ADR (links only) |
+
+## Problem
+
+## Answer
+
+* **Finding:** (TLDR) the recommended bet
+* **Confidence:** high / medium / low — one reason
+* **So what:** the decision this page asks for
+
+## What
+
+## Why
+
+## How
+
+* **Chosen path:** …
+* **Option A (if compared):** overview — source/link
+* **Option B (if compared):** overview — source/link
+
+## Alternatives considered
+
+| Option | Why not (or why later) | Source |
+| --- | --- | --- |
+| Do nothing | | |
+| | | |
+
+## Risks and open questions
+
+* 
+
+## Recommendation
+
+* Decision / owner
+* Near-term next steps (about one week): …
+
+## Review
+
+* [ ] Ground checklist in SKILL.md passed
+* [ ] Owner and Reviewer named (or TBD)
+```
+
+## Fill notes
+
+* **What:** scope in/out and success signal.
+* **Why:** why now, cost of inaction; link evidence rather than re-litigating full research.
+* **How:** chosen approach and constraints. When the session weighed options, keep short overviews + sources here or in Alternatives (not a local script runbook).
+* **Recommendation:** actionable next steps the team can finish soon, not a vague roadmap.
+* Body budget about 600 words; cut ideas before shrinking layout.
