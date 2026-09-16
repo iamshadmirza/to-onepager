@@ -62,7 +62,7 @@ None / research complete — **or**, only if the transcript discussed follow-ups
 Use when the session compares the **same measurement** across **N conditions** (caps, modes, scopes, configs). One section per condition. Do **not** flatten into Assumptions → Results → Key findings.
 
 ```markdown
-# [Claim: what is true across conditions, with the decisive number]
+# [Comparison or claim; numbers may live in Finding]
 
 | | |
 | --- | --- |
@@ -73,17 +73,27 @@ Use when the session compares the **same measurement** across **N conditions** (
 
 ## Answer
 
-* **Finding:** (TLDR: condition → verdict, include decisive number)
+* **Finding:**
+  * [Condition 1 → verdict]
+  * [Condition 2 → verdict]
+  * [Condition 3 → verdict]
+  * **Bottom line:** …
 * **Confidence:** high / medium / low — one reason
 * **So what:**
 
 ---
 
-## 1. [Condition A]
+## [Optional short context]
+
+Only when Answer/Question are not enough for a cold reader (define arms, metrics like types vs instances, how to read tables). Pick any clear heading, or fold into Question. Skip if unneeded.
+
+---
+
+## 1. [Fairness or outcome title, e.g. Under the current cap]
 
 ### Verdict
 
-[One sentence: prefer X / types tie / invalid comparison / …]
+[One sentence: prefer X / types tie / not a fair contest / …]
 
 ### Analysis
 
@@ -92,7 +102,31 @@ Use when the session compares the **same measurement** across **N conditions** (
 | [metric] | | |
 | [metric] | | |
 
-[Optional smoking-gun check table when the claim is a gap or equality:]
+* **Types / Counts / Why:** short bullets; facts only. Interpretation stays in Verdict / Answer.
+
+---
+
+## 2. [Next condition, outcome-framed]
+
+### Verdict
+
+### Analysis
+
+(same pattern)
+
+---
+
+## 3. [Decisive / fair condition]
+
+### Verdict
+
+### Analysis
+
+| | Arm 1 | Arm 2 |
+| --- | ---: | ---: |
+| [metric] | | |
+
+[Smoking-gun check when the claim is a gap or equality:]
 
 | Check | Result |
 | --- | --- |
@@ -100,27 +134,13 @@ Use when the session compares the **same measurement** across **N conditions** (
 | [e.g. Counts equal?] | |
 | [e.g. Gap composition] | |
 
-* **Types / Counts / Why:** short bullets; facts only. Interpretation stays in Verdict / Answer.
+### [Replication nest, e.g. Multi-session check]
 
----
+Only if the transcript repeated the fair test. Keep under this section; do not promote to a top-level condition.
 
-## 2. [Condition B]
-
-### Verdict
-
-### Analysis
-
-(same pattern)
-
----
-
-## 3. [Condition C]
-
-### Verdict
-
-### Analysis
-
-(same pattern)
+| Check | Result |
+| --- | --- |
+| | |
 
 ---
 
@@ -145,6 +165,6 @@ None / research complete — **or**, only if the transcript discussed follow-ups
 
 * Lead with the concrete claim in the title and Finding; put setup in Question only.
 * **Default spine:** Assumptions one row per prior belief; drop when none. Results / Key findings: measured outcome first. Include mined mechanisms with counts in Key findings.
-* **Experiment spine:** one section per condition; each has Verdict then Analysis. Put the shareable proof table in Analysis (scorecard and/or same-conclusion / gap-composition). Drop Assumptions / Results / Key findings unless the session also needs a short cross-condition rollup (prefer a table inside the decisive section).
+* **Experiment spine:** Finding as a bullet ladder. Optional short context after Answer only when tables need a legend. Title condition sections by fairness/outcome, not only raw knobs. Put the shareable proof table in Analysis. Nest replication under the decisive condition. Drop Assumptions / Results / Key findings.
 * Recommendation: do not invent next steps. Closed research → None. Only list actions the session actually discussed.
 * Body budget about 600 words for default. For experiment spines, keep prose short; **do not cut the smoking-gun table** to hit the budget.

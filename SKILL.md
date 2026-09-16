@@ -74,15 +74,20 @@ Fill that spine for **easy reading**: a cold reader should get the claim in seco
 **research-finding fill path**
 
 * **Default:** Assumptions → Results → Key findings (template default spine).
-* **Experiment** (when Mine flagged `fill: experiment`): use the template **experiment spine**. One top-level section per condition; each section is **Verdict** then **Analysis**. Put the shareable proof in Analysis (A vs B scorecard and/or same-conclusion / gap-composition table). Do **not** flatten an N-condition experiment into Assumptions → Results → Key findings. Announce: `Fill path: experiment`.
+* **Experiment** (when Mine flagged `fill: experiment`): use the template **experiment spine**. Announce: `Fill path: experiment`.
+  * **Finding ladder:** stacked bullets (one verdict per condition) plus an optional bottom line; do not crush N conditions into one mega-sentence.
+  * **Context before conditions (optional):** after Answer, a short block that defines arms or metrics (e.g. types vs instances) so tables are not misread. Use only when Question is not enough. Any clear heading is fine; omit when unneeded. Do not invent a mandatory “What we compare” section.
+  * **Condition sections:** one top-level section per condition; each is **Verdict** then **Analysis**. Title the section by **fairness or outcome** (e.g. “Fair A/B: cap removed”), not only the raw knob (“MaxMessages = 100”). Put the shareable proof in Analysis (scorecard and/or same-conclusion / gap-composition table).
+  * **Replication:** nest under the decisive/fair condition (e.g. Multi-session check); do not add a top-level condition section just for repeats.
+  * Do **not** flatten an N-condition experiment into Assumptions → Results → Key findings.
 
 **Readability (every page)**
 
-* **Lead with the concrete thing:** title and Finding open with the number, verdict, or bet. Context follows; it does not open the page.
+* **Lead with the concrete thing:** title and Finding open with the number, verdict, or bet. Context follows; it does not open the page. For experiments, Finding may carry the stake as a bullet ladder; the title may name the comparison if Finding holds the numbers.
 * **Explain after the example:** in Results, Key findings, Analysis, and How, state the measured outcome or chosen path first, then one short line of context if needed.
 * **One job per section:** each heading does one job. If a section argues two things, split or cut.
 * **Answer** a cold reader can use without caring about page type: Finding (TLDR) / Confidence / So what
-* Title is the **claim** (include a measured number when the transcript has one)
+* Title is the **claim** (include a measured number when the transcript has one; experiments may put the number in Finding instead)
 * Recommendation: only actions discussed in the session. If the session only answered a question (closed research, no product bet), write **None** (or "research complete; no follow-up") — do **not** invent next steps, doc TODOs, reviewer homework, or a "~1 week" plan.
 * Header: Owner, Go deeper
 * Review section present
@@ -99,13 +104,13 @@ Fail and edit until every check passes. This step is the single source of truth 
 
 * Every factual cell/bullet traces to the transcript
 * No unmeasured magnitudes
-* Cold-reader Answer works without reading page type; Finding is the TLDR and leads with the concrete claim
-* Title leads with the claim (not a topic or soft header)
+* Cold-reader Answer works without reading page type; Finding is the TLDR and leads with the concrete claim (experiment Finding may be a bullet ladder)
+* Title leads with the claim (not a topic or soft header); experiments may name the comparison in the title if Finding holds the stake/numbers
 * Body matches the routed page type (no hybrid spine)
 * One job per section; no section that both explains and recommends
 * Chrome complete (Owner, Go deeper)
 * Go deeper / recommendations stay free of local runbook clutter
-* Confidence matches evidence; title matches measured numbers when present
+* Confidence matches evidence; title matches measured numbers when present (or Finding does, for experiment ladders)
 * **One-page budget:** about 600 words of prose; if over, cut the least important ideas (do not shrink type or stuff an appendix). **Exception:** experiment smoking-gun tables (scorecard, gap composition, equality check) are not cut to hit the budget; shorten bullets around them instead.
 * **Plain pass** on Answer + Recommendation: active voice, short words, cut needless words and jargon
 * **No templated bridges:** cut phrases like "in today's landscape," "game-changer," "here's why this matters," or a closing question added only for engagement
@@ -116,7 +121,7 @@ Fail and edit until every check passes. This step is the single source of truth 
 **research-finding**
 
 * Default spine: Findings hold facts only (interpretation stays in Answer); Results and Key findings lead with the measured outcome; mechanisms with counts and user elevations appear in Key findings; Assumptions have verdicts when prior beliefs existed
-* Experiment spine: one section per condition; each has Verdict then Analysis; Analysis holds the shareable proof table; no Assumptions/Results/Key findings dump unless a short cross-condition rollup table is needed inside the decisive section
+* Experiment spine: Finding ladder; optional short context after Answer only when needed; one section per condition titled by fairness/outcome; each has Verdict then Analysis with the shareable proof table; replication nested under the decisive condition; no Assumptions/Results/Key findings dump
 * Closed understanding sessions often have Recommendation: None
 
 **proposal**
