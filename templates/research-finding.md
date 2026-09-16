@@ -1,17 +1,17 @@
 # research-finding template
 
-Copy this spine. Fill every required section. Quality rules live in SKILL.md **Ground** — do not weaken them here.
+Copy one spine below. Prefer **experiment** when Mine flagged a multi-condition comparison. Quality rules live in SKILL.md **Ground** — do not weaken them here.
+
+## Default spine
+
+Use when the session answers one claim without comparing N controlled conditions.
 
 ```markdown
 # [Claim: what is true, with a number when measured]
 
 | | |
 | --- | --- |
-| **Status** | Draft / In review / Reviewed / Accepted / Superseded |
 | **Owner** | [name or mention] |
-| **Reviewer** | [name or mention] (required before Reviewed) |
-| **Updated** | YYYY-MM-DD |
-| **Page type** | research-finding |
 | **Go deeper** | dashboard, doc, PR, transcript (links only) |
 
 ## Question
@@ -53,15 +53,98 @@ None / research complete — **or**, only if the transcript discussed follow-ups
 
 ## Review
 
-* [ ] Owner and Reviewer named
+* [ ] Owner named
+* [ ] Ready for human review
+```
+
+## Experiment spine
+
+Use when the session compares the **same measurement** across **N conditions** (caps, modes, scopes, configs). One section per condition. Do **not** flatten into Assumptions → Results → Key findings.
+
+```markdown
+# [Claim: what is true across conditions, with the decisive number]
+
+| | |
+| --- | --- |
+| **Owner** | [name or mention] |
+| **Go deeper** | dashboard, doc, PR, transcript (links only) |
+
+## Question
+
+## Answer
+
+* **Finding:** (TLDR: condition → verdict, include decisive number)
+* **Confidence:** high / medium / low — one reason
+* **So what:**
+
+---
+
+## 1. [Condition A]
+
+### Verdict
+
+[One sentence: prefer X / types tie / invalid comparison / …]
+
+### Analysis
+
+| | Arm 1 | Arm 2 |
+| --- | ---: | ---: |
+| [metric] | | |
+| [metric] | | |
+
+[Optional smoking-gun check table when the claim is a gap or equality:]
+
+| Check | Result |
+| --- | --- |
+| [e.g. Types equal?] | |
+| [e.g. Counts equal?] | |
+| [e.g. Gap composition] | |
+
+* **Types / Counts / Why:** short bullets; facts only. Interpretation stays in Verdict / Answer.
+
+---
+
+## 2. [Condition B]
+
+### Verdict
+
+### Analysis
+
+(same pattern)
+
+---
+
+## 3. [Condition C]
+
+### Verdict
+
+### Analysis
+
+(same pattern)
+
+---
+
+## Method and limits
+
+* 
+
+## Recommendation
+
+None / research complete — **or**, only if the transcript discussed follow-ups:
+
+* Decision / owner
+* Near-term next steps (from the session only): …
+
+## Review
+
+* [ ] Owner named
 * [ ] Ready for human review
 ```
 
 ## Fill notes
 
 * Lead with the concrete claim in the title and Finding; put setup in Question only.
-* Assumptions: one row per prior belief; lead with what changed. Drop the subsection only when there were no prior beliefs.
-* Results / Key findings: measured outcome first, then one short context line if needed. One job per subsection.
-* Key findings: facts with numbers or concrete references. Include every mined mechanism with counts. Optional **Mechanism** subsection after Key findings when one factor dominated.
+* **Default spine:** Assumptions one row per prior belief; drop when none. Results / Key findings: measured outcome first. Include mined mechanisms with counts in Key findings.
+* **Experiment spine:** one section per condition; each has Verdict then Analysis. Put the shareable proof table in Analysis (scorecard and/or same-conclusion / gap-composition). Drop Assumptions / Results / Key findings unless the session also needs a short cross-condition rollup (prefer a table inside the decisive section).
 * Recommendation: do not invent next steps. Closed research → None. Only list actions the session actually discussed.
-* Body budget about 600 words; cut ideas before shrinking layout.
+* Body budget about 600 words for default. For experiment spines, keep prose short; **do not cut the smoking-gun table** to hit the budget.

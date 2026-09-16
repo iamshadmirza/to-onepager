@@ -9,11 +9,7 @@ Problem / What / Why / How live on this page type only.
 
 | | |
 | --- | --- |
-| **Status** | Draft / In review / Reviewed / Accepted / Superseded |
 | **Owner** | [name or mention] |
-| **Reviewer** | [name or mention] (required before Reviewed) |
-| **Updated** | YYYY-MM-DD |
-| **Page type** | proposal |
 | **Go deeper** | RFC, ticket, prior one-pager, ADR (links only) |
 
 ## Problem
@@ -54,7 +50,7 @@ None — **or**, only if the transcript discussed follow-ups:
 
 ## Review
 
-* [ ] Owner and Reviewer named
+* [ ] Owner named
 * [ ] Ready for human review
 ```
 

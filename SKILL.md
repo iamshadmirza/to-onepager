@@ -40,6 +40,7 @@ If intent leans **research-finding**, also capture:
 
 * Explanatory mechanisms with counts (dominant signal, FP pattern, counterfactual)
 * User-elevated findings ("put this in Key findings")
+* **Experiment?** If the session compares the same measurement across N conditions (caps, modes, scopes, configs, A/B arms), list each condition and the smoking-gun table (scorecard, gap composition, equality check). Flag `fill: experiment`.
 
 If intent leans **proposal**, also capture:
 
@@ -70,20 +71,25 @@ Load the template for the routed type (context pointer — read only that file):
 
 Fill that spine for **easy reading**: a cold reader should get the claim in seconds and follow one thread per section.
 
+**research-finding fill path**
+
+* **Default:** Assumptions → Results → Key findings (template default spine).
+* **Experiment** (when Mine flagged `fill: experiment`): use the template **experiment spine**. One top-level section per condition; each section is **Verdict** then **Analysis**. Put the shareable proof in Analysis (A vs B scorecard and/or same-conclusion / gap-composition table). Do **not** flatten an N-condition experiment into Assumptions → Results → Key findings. Announce: `Fill path: experiment`.
+
 **Readability (every page)**
 
 * **Lead with the concrete thing:** title and Finding open with the number, verdict, or bet. Context follows; it does not open the page.
-* **Explain after the example:** in Results, Key findings, and How, state the measured outcome or chosen path first, then one short line of context if needed.
+* **Explain after the example:** in Results, Key findings, Analysis, and How, state the measured outcome or chosen path first, then one short line of context if needed.
 * **One job per section:** each heading does one job. If a section argues two things, split or cut.
 * **Answer** a cold reader can use without caring about page type: Finding (TLDR) / Confidence / So what
 * Title is the **claim** (include a measured number when the transcript has one)
 * Recommendation: only actions discussed in the session. If the session only answered a question (closed research, no product bet), write **None** (or "research complete; no follow-up") — do **not** invent next steps, doc TODOs, reviewer homework, or a "~1 week" plan.
-* Header: Status, Owner, Reviewer, Updated, Page type, Go deeper
-* Review section present; Status stays short of Reviewed until a named Reviewer exists
+* Header: Owner, Go deeper
+* Review section present
 
-Owner / Reviewer: resolve real people. For Confluence destinations use Atlassian mentions when publishing ([publish.md](publish.md)). Otherwise display names. Ask if unknown; `TBD` only if deferred.
+Owner: resolve a real person. For Confluence destinations use Atlassian mentions when publishing ([publish.md](publish.md)). Otherwise display name. Ask if unknown; `TBD` only if deferred.
 
-**Completion:** routed spine filled; chrome complete; Owner/Reviewer resolved or explicit `TBD`; title and Finding lead with the concrete claim.
+**Completion:** routed spine filled (default or experiment); chrome complete; Owner resolved or explicit `TBD`; title and Finding lead with the concrete claim.
 
 ### 4. Ground
 
@@ -97,10 +103,10 @@ Fail and edit until every check passes. This step is the single source of truth 
 * Title leads with the claim (not a topic or soft header)
 * Body matches the routed page type (no hybrid spine)
 * One job per section; no section that both explains and recommends
-* Chrome complete; Reviewed requires a named Reviewer
+* Chrome complete (Owner, Go deeper)
 * Go deeper / recommendations stay free of local runbook clutter
 * Confidence matches evidence; title matches measured numbers when present
-* **One-page budget:** about 600 words; if over, cut the least important ideas (do not shrink type or stuff an appendix)
+* **One-page budget:** about 600 words of prose; if over, cut the least important ideas (do not shrink type or stuff an appendix). **Exception:** experiment smoking-gun tables (scorecard, gap composition, equality check) are not cut to hit the budget; shorten bullets around them instead.
 * **Plain pass** on Answer + Recommendation: active voice, short words, cut needless words and jargon
 * **No templated bridges:** cut phrases like "in today's landscape," "game-changer," "here's why this matters," or a closing question added only for engagement
 * **No soft recap:** Recommendation does not rephrase Finding
@@ -109,10 +115,8 @@ Fail and edit until every check passes. This step is the single source of truth 
 
 **research-finding**
 
-* Findings hold facts only (interpretation stays in Answer)
-* Results and Key findings lead with the measured outcome, then brief context
-* Mechanisms with counts and user elevations appear in Key findings
-* Assumptions have verdicts when prior beliefs existed
+* Default spine: Findings hold facts only (interpretation stays in Answer); Results and Key findings lead with the measured outcome; mechanisms with counts and user elevations appear in Key findings; Assumptions have verdicts when prior beliefs existed
+* Experiment spine: one section per condition; each has Verdict then Analysis; Analysis holds the shareable proof table; no Assumptions/Results/Key findings dump unless a short cross-condition rollup table is needed inside the decisive section
 * Closed understanding sessions often have Recommendation: None
 
 **proposal**
@@ -132,4 +136,4 @@ Read `config.md`. If missing or invalid, run Setup, then continue.
 
 Follow [publish.md](publish.md) for the configured `destination`.
 
-**Completion:** published to the configured destination, or local copy saved with the destination's connect prompt. Page type announced; Reviewer named or `TBD`.
+**Completion:** published to the configured destination, or local copy saved with the destination's connect prompt. Page type announced; Owner named or `TBD`.

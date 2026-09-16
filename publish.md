@@ -2,7 +2,7 @@
 
 Read `config.md` beside `SKILL.md`. Branch on `destination` only.
 
-After any successful publish, remind: Status stays Draft or In review until a human Reviewer (not the author) completes Ground.
+After any successful publish, remind: Review is incomplete until a human (not the author) completes Ground.
 
 ## local
 
@@ -36,7 +36,7 @@ GetDynamicTools with pattern "google|docs|drive"
 GetDynamicTools with pattern "confluence|atlassian|wiki"
 ```
 
-2. **Available:** create a page in `confluence_folder_url`. Title = one-pager title. Body in HTML. Owner, Reviewer, and Recommendation owners use mention nodes when accountIds are resolved:
+2. **Available:** create a page in `confluence_folder_url`. Title = one-pager title. Body in HTML. Owner and Recommendation owners use mention nodes when accountIds are resolved:
 
 ```html
 <span data-type="mention" data-user-id="ACCOUNT_ID">@Display Name</span>
