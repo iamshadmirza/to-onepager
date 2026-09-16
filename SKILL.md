@@ -76,7 +76,7 @@ Fill that spine for **easy reading**: a cold reader should get the claim in seco
 * **Default:** Assumptions → Results → Key findings (template default spine).
 * **Experiment** (when Mine flagged `fill: experiment`): use the template **experiment spine**. Announce: `Fill path: experiment`.
   * **Finding ladder:** stacked bullets (one verdict per condition) plus an optional bottom line; do not crush N conditions into one mega-sentence.
-  * **Context before conditions (optional):** after Answer, a short block that defines arms or metrics (e.g. types vs instances) so tables are not misread. Use only when Question is not enough. Any clear heading is fine; omit when unneeded. Do not invent a mandatory “What we compare” section.
+  * **Context before conditions (optional):** after Answer, a short block that explains the sides of the comparison and any easy-to-mix-up terms (e.g. types vs instance counts) so tables are not misread. Use only when Question is not enough. Prefer a plain heading such as **How to read this**; omit when unneeded. Do not invent a mandatory section name.
   * **Condition sections:** one top-level section per condition; each is **Verdict** then **Analysis**. Title the section by **fairness or outcome** (e.g. “Fair A/B: cap removed”), not only the raw knob (“MaxMessages = 100”). Put the shareable proof in Analysis (scorecard and/or same-conclusion / gap-composition table).
   * **Replication:** nest under the decisive/fair condition (e.g. Multi-session check); do not add a top-level condition section just for repeats.
   * Do **not** flatten an N-condition experiment into Assumptions → Results → Key findings.

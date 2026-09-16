@@ -83,9 +83,9 @@ Use when the session compares the **same measurement** across **N conditions** (
 
 ---
 
-## [Optional short context]
+## How to read this
 
-Only when Answer/Question are not enough for a cold reader (define arms, metrics like types vs instances, how to read tables). Pick any clear heading, or fold into Question. Skip if unneeded.
+Only when Answer/Question are not enough for a cold reader (explain the two sides, types vs instance counts, how to read tables). Prefer a plain heading like this; fold into Question or skip if unneeded.
 
 ---
 
@@ -165,6 +165,6 @@ None / research complete — **or**, only if the transcript discussed follow-ups
 
 * Lead with the concrete claim in the title and Finding; put setup in Question only.
 * **Default spine:** Assumptions one row per prior belief; drop when none. Results / Key findings: measured outcome first. Include mined mechanisms with counts in Key findings.
-* **Experiment spine:** Finding as a bullet ladder. Optional short context after Answer only when tables need a legend. Title condition sections by fairness/outcome, not only raw knobs. Put the shareable proof table in Analysis. Nest replication under the decisive condition. Drop Assumptions / Results / Key findings.
+* **Experiment spine:** Finding as a bullet ladder. Optional **How to read this** (or similar plain heading) after Answer only when tables need a legend. Title condition sections by fairness/outcome, not only raw knobs. Put the shareable proof table in Analysis. Nest replication under the decisive condition. Drop Assumptions / Results / Key findings.
 * Recommendation: do not invent next steps. Closed research → None. Only list actions the session actually discussed.
 * Body budget about 600 words for default. For experiment spines, keep prose short; **do not cut the smoking-gun table** to hit the budget.
